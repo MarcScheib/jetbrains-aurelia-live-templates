@@ -14,4 +14,4 @@ C:\Users\marc\.IntelliJIdea2016.1\config\templates
 
 In the default configuration, press **Ctrl + J** which pops up a list of all available live temlates. Select an entry and insert it at your cursor position via enter.
 
-Alternatively, if you are familia with the templates abbreviations, you can type it at the position for the live template and press tab.
+Alternatively, if you are familiar with the live template abbreviations, you can type it at the position for the live template and press tab (skip the dashes of the abbreviation when typing).
