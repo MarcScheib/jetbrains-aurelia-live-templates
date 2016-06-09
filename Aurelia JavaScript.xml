@@ -1,9 +1,14 @@
 <templateSet group="Aurelia JavaScript">
-  <template name="bootstrapman" value="import {LogManager} from 'aurelia-framework';&#10;import {ConsoleAppender} from 'aurelia-logging-console';&#10;&#10;LogManager.addAppender(new ConsoleAppender());&#10;LogManager.setLevel(LogManager.logLevel.debug);&#10;&#10;export function configure(aurelia) {&#10;  aurelia.use&#10;    .defaultBindingLanguage()&#10;    .defaultResources()&#10;    .history()&#10;    .router()&#10;    .eventAggregator();&#10;&#10;  aurelia.start().then(() =&gt; aurelia.setRoot());&#10;}" description="Aurelia manual bootstrapping configuration" toReformat="true" toShortenFQNames="true">
+  <template name="au-boot-explicit" value="import {LogManager} from 'aurelia-framework';&#10;import {ConsoleAppender} from 'aurelia-logging-console';&#10;&#10;LogManager.addAppender(new ConsoleAppender());&#10;LogManager.setLevel(LogManager.logLevel.debug);&#10;&#10;export function configure(aurelia) {&#10;  aurelia.use&#10;    .defaultBindingLanguage()&#10;    .defaultResources()&#10;    .history()&#10;    .router()&#10;    .eventAggregator();&#10;&#10;  aurelia.start().then(() =&gt; aurelia.setRoot());&#10;}" description="Aurelia explicit bootstrapping configuration" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="false" />
       <option name="JS_EXPRESSION" value="false" />
       <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="au-boot-standard" value="export function configure(aurelia) {&#10;  aurelia.use&#10;    .standardConfiguration()&#10;    .developmentLogging();&#10;&#10;  aurelia.start().then(() =&gt; aurelia.setRoot());&#10;}" description="Aurelia standard bootstrapping configuration" toReformat="false" toShortenFQNames="true">
+    <context>
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
