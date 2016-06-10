@@ -1,0 +1,7 @@
+<templateSet group="Aurelia HTML">
+  <template name="au-view-blank" value="&lt;template&gt;&#10;&#10;&lt;/template&gt;" description="Blank Aurelia View" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

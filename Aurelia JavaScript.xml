@@ -12,4 +12,32 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="au-load-feature-conf" value=".feature('$feature_name$', $config$ =&gt; { $fun$ })" description="Adds an Aurelia feature with a configuration parameter" toReformat="false" toShortenFQNames="true">
+    <variable name="feature_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="config" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fun" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="au-load-plugin-conf" value=".plugin('$plugin_name$', $config$ =&gt; { $fun$ })" description="Adds an Aurelia plugin with a configuration parameter" toReformat="false" toShortenFQNames="true">
+    <variable name="plugin_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="config" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fun" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="au-load-feature" value=".feature('$feature_name$')" description="Adds an Aurelia feature" toReformat="false" toShortenFQNames="true">
+    <variable name="feature_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="au-load-plugin" value=".plugin('$plugin_name$')" description="Adds an Aurelia feature" toReformat="false" toShortenFQNames="true">
+    <variable name="plugin_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
 </templateSet>
