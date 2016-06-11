@@ -40,4 +40,10 @@
       <option name="JS_EXPRESSION" value="true" />
     </context>
   </template>
+  <template name="au-view-model-blank" value="export class $view_model_name$ {&#10;&#10;}" description="Adds a blank Aurelia View Model" toReformat="false" toShortenFQNames="true">
+    <variable name="view_model_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
